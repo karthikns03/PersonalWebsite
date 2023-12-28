@@ -29,9 +29,13 @@ img {
   border: 7px solid #635f67;
   outline: 10px solid transparent; /* Add a transparent outline */
   outline-offset: -10px; /* Offset to make it look like a border */
-  animation: fadeInImage 1s ease-in-out forwards 11s,
-    moveFromTop 1s ease-in-out forwards 11s;
+  animation: fadeInImage 1s ease-in-out forwards 11.5s,
+    moveFromTop 1s ease-in-out forwards 11.5s;
   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+
+  /* Set explicit width and height for the image */
+  width: 250px; /* Adjust as needed */
+  height: 250px; /* Adjust as needed */
 }
 
 h1 {
@@ -42,11 +46,15 @@ h1 {
 
 .first-heading {
   font-size: 10vw;
+  font-family: "Open Sans", sans-serif;
+
   animation: fadeInAndOut 7s ease-in-out forwards;
 }
 
 .second-heading {
   font-size: 10vw;
+  font-family: "Open Sans", sans-serif;
+
   animation: fadeInAndOut 7s ease-in-out 5.5s forwards;
 }
 
@@ -60,8 +68,8 @@ p {
   opacity: 0;
   text-align: center;
   transform: translateX(-50px);
-  animation: fadeInLeft 1s ease-out forwards 11s,
-    fadeInOpacity 1s ease-in-out forwards 11s;
+  animation: fadeInLeft 1s ease-out forwards 11.5s,
+    fadeInOpacity 1s ease-in-out forwards 11.5s;
 }
 
 .catchy-font {
@@ -111,7 +119,7 @@ img:hover {
     font-size: 1vw;
     opacity: 1;
   }
-  100% {
+  110% {
     font-size: 0vw;
     opacity: 0;
   }
