@@ -29,8 +29,8 @@ img {
   border: 7px solid #635f67;
   outline: 10px solid transparent; /* Add a transparent outline */
   outline-offset: -10px; /* Offset to make it look like a border */
-  animation: fadeInImage 1s ease-in-out forwards 11.5s,
-    moveFromTop 1s ease-in-out forwards 11.5s;
+  animation: fadeInImage 1s ease-in-out forwards 0s,
+    moveFromTop 1s ease-in-out forwards 0s;
   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
 
   /* Set explicit width and height for the image */
@@ -68,8 +68,8 @@ p {
   opacity: 0;
   text-align: center;
   transform: translateX(-50px);
-  animation: fadeInLeft 1s ease-out forwards 11.5s,
-    fadeInOpacity 1s ease-in-out forwards 11.5s;
+  animation: fadeInLeft 1s ease-out forwards 0.7s,
+    fadeInOpacity 1s ease-in-out forwards 0.7s;
 }
 
 .catchy-font {
@@ -104,25 +104,6 @@ p {
 img:hover {
   border: 7px solid teal; /* Change border color to teal on hover */
   box-shadow: 0 0 70px teal; /* Add a teal-colored box shadow on hover */
-}
-
-@keyframes fadeInAndOut {
-  0% {
-    font-size: 0vw;
-    opacity: 0;
-  }
-  25% {
-    font-size: 10vw;
-    opacity: 1;
-  }
-  50% {
-    font-size: 1vw;
-    opacity: 1;
-  }
-  110% {
-    font-size: 0vw;
-    opacity: 0;
-  }
 }
 
 @keyframes fadeInLeft {
